@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>online Quiz</title>
+        <link rel="stylesheet" href="onlinequiz.css">
+        <script>
+            var score=0;
+            function funct()
+            {
+                if(document.getElementById('Markup language').checked)
+                {
+                score++;
+                }
+                if(document.getElementById('1990').checked)
+                {
+                score++;
+                }
+                if(document.getElementById('Hypertext').checked)
+                {
+                score++;
+                }
+                if(document.getElementById('cascading style sheets').checked)
+                {
+                score++;
+                }
+                if(document.getElementById('font-size').checked)
+                {
+                score++;
+                }
+                if(document.getElementById('style').checked)
+                {
+                score++;
+                }
+                if(document.getElementById('Fixed tags defined by the language').checked)
+                {
+                score++;
+                }
+                if(document.getElementById('program the behavior of web pages').checked)
+                {
+                score++;
+                }
+                if(document.getElementById('script').checked)
+                {
+                score++;
+                }
+                if(document.getElementById('body').checked)
+                {
+                score++;
+                }
+                document.write ("your score is :");
+                document.write(score);
+            }
+           
+        </script>
+    </head>
+    <body>
+        <form name="quiz" id="quiz">
+        <div>
+            <p>1.What type of language is HTML?</p>
+            <p><input type="radio" name="q1" id="scripting language" value="scripting language">A.Scripting language</p>
+            <p><input type="radio" name="q1" id="Markup language" value="Markup language">B.Markup language</option>
+            <p><input type="radio" name="q1" id="Programming language" value="Programming language">C.Programming language</p>
+            <p><input type="radio" name="q1" id="Network protocol" value="Network protocol">D.Network protocol</p>
+        </div><br><br>
+        <div>
+            <p>2.In which year HTML was first proposed?</p>
+            <p><input type="radio" name="q2" id="1990" value="1990">A.1990</p>
+            <p><input type="radio" name="q2" id="1985" value="1985">B.1985</p>
+            <p><input type="radio" name="q2" id="2000" value="2000">C.2000</p>
+            <p><input type="radio" name="q2" id="1995" value="1995">D.1995</p>
+        </div><br><br>
+        <div>
+            <p>3.What is the fullform of HTML?</p>
+            <p><input type="radio" name="q3" id="High Text Marketting Language" value="High Text Marketting Language">A.High Text Marketting Language<p>
+            <p><input type="radio" name="q3" id="Hyper Tool Main Language" value="Hyper Tool Main Language">B.Hyper Tool Main Language</p>
+            <p><input type="radio" name="q3" id="Highlevel Texture Main Language" value="Highlevel Texture Main Language">C.Highlevel Texture Main Language</p>
+            <p><input type="radio" name="q3" id="Hypertext" value="Hypertext">D.Hypertext Markup Language</p>
+        </div><br><br>
+        <div>
+            <p>4.CSS stands for</p>
+            <p><input type="radio" name="q4" id="color and style sheets" value="color and style sheets">A.color and style sheets</p>
+            <p><input type="radio" name="q4" id="cascade style sheets" value="cascade style sheets">B.cascade style sheets</p>
+            <p><input type="radio" name="q4" id="cascading style sheets" value="cascading style sheets">C.cascading style sheets</p>
+            <p><input type="radio" name="q4" id="N0ne of" value="None of">D.None of the above</p>
+        </div><br><br>
+        <div>
+            <p>5.The CSS property used to control the element's font-size is -</p>
+            <p><input type="radio" name="q5" id="text-style" value="text-style">A.text-style</p>
+            <p><input type="radio" name="q5" id="font-size" value="font-size">B.font-size</p>
+            <p><input type="radio" name="q5" id="text-size" value="text-size">C.text-size</p>
+            <p><input type="radio" name="q5" id="None of" value="None of">D.None of the above</p>
+        </div><br><br>
+        <div>
+            <p>6.The HTML attribute used to define the inline styles is -</p>
+            <p><input type="radio" name="q6" id="style" value="style">A.style</p>
+            <p><input type="radio" name="q6" id="styles" value="styles">B.styles</p>
+            <p><input type="radio" name="q6" id="class" value="class">C.class</p>
+            <p><input type="radio" name="q6" id="None of" value="None of">D.None of the above</p>
+        </div><br><br>
+        <div>
+            <p>7.HTML uses</p>
+            <p><input type="radio" name="q7" id="User defined tags" value="User defined tags">A.User defined tags</p>
+            <p><input type="radio" name="q7" id="Pre-specified tags" value="Pre-specified tags">B.Pre-specified tags</p>
+            <p><input type="radio" name="q7" id="Fixed tags defined by the language" value="Fixed tags defined by the language">C.Fixed tags defined by the language</p>
+            <p><input type="radio" name="q7" id="Tags only for linking" value="Tags only for linking">D.Tags only for linking</p>
+        </div><br><br>
+        <div>
+            <p>8.Javascript is used to</p>
+            <p><input type="radio" name="q8" id="content" value=" content">A.define the content of web pages</p>
+            <p><input type="radio" name="q8" id="layout" value="layout">B.specify the layout of web pages</p>
+            <p><input type="radio" name="q8" id="behavior" value=" behavior ">C. program the behavior of web pages</p>
+            <p><input type="radio" name="q8" id="all of" value="all of">D.All of the above</p>
+        </div><br><br>
+        <div>
+            <p>9.Inside which HTML element do we put the JavaScript?</p>
+            <p><input type="radio" name="q9" id="script" value="script">A.script</p>
+            <p><input type="radio" name="q9" id="scripting" value="scripting">B.scripting</p>
+            <p><input type="radio" name="q9" id="javascript" value="javascript">C.javascript</p>
+            <p><input type="radio" name="q9" id="js" value="js">D.js</p>
+        </div><br><br>
+        <div>
+            <p>10.Which is the correct place to insert a Javascript?</p>
+            <p><input type="radio" name="q10" id="head" value="head">A.head</p>
+            <p><input type="radio" name="q10" id="body" value="body">B.body</p>
+            <p><input type="radio" name="q10" id="both head section and body section are correct" value="both head section and body section are correct">C.both head section and body section are correct</p>
+            <p><input type="radio" name="q10" id="None of the above" value="None of the above">D.None of the above</p>
+        </div><br><br>
+        <button onclick="funct()">SUBMIT</button>
+        </form>
+    </body>
+</html>

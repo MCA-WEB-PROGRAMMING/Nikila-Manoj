@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <title>STRING AND MATH FUNCTIONS</title>
+        <style>
+             div {
+            text-align: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 2em;
+
+        }
+
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            margin-top: 2em;
+            width: 100%;
+            padding: 5px;
+            color: #222324;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            padding: 1em;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            text-align: left;
+        }
+        </style>
+    </head>
+    <body>
+        <h2>String Functions</h2>
+        <div>
+            <table>
+                <tbody>
+                    <tr>
+                    <th>Enter a Text</th>
+                    <td><input type="text" id="in1"  name="in1"></td>
+                    </tr>
+                    <tr>
+                        <th>Search a Text</th>
+                        <td><input type="text" id="in2" name="in2"></td>
+                    </tr>
+                    <tr>
+                        <th>Slice a Text</th>
+                        <td><input type="number" name="in3" id="in3"placeholder="slice start">
+                            <input type="number" name="in4" id="in4" placeholder="slice end"></td>
+                    </tr>
+                    <tr>
+                        <th>Replace a Text</th>
+                        <td><input type="text" id="in5" name="in5" placeholder="Text to be replaced">
+                        <input type="text" id="in6" name="in6" placeholder="Text to be replaced with"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter a uppercase Text</th>
+                        <td><input type="text" name="in7" id="in7" placeholder="Enter the string"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter a Text to concatenate</th>
+                        <td><input type="text" name="in8" id="in8" placeholder="Enter the text"></td>
+                    </tr>
+                    <tr>
+                        <th>Enter a string pad</th>
+                        <td><input type="text" name="in9" id="in9" placeholder="Enter the Text"></td>
+                    </tr>
+                    <tr>
+                        <td><center><button type="submit"name="submit" id="string_func" onclick="string_func()"style="background-color: darkgreen;">submit</button></center></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br>
+        <div>
+        <table>
+            <tr>
+                <td>Length of the Text: </td>
+                <td><span id="out1"></span></td>
+            </tr>
+            <tr>
+                <td>Index of the Text : </td>
+                <td><span id="out2"></span></td>
+            </tr>
+            <tr>
+                <td>Slice of the Text: </td>
+                <td><span id="out3"></span></td>
+            </tr>
+            <tr>
+                <td>Substr of the Text: </td>
+                <td><span id="out4"></span></td>
+            </tr>
+            <tr>
+                <td>Replaced Text: </td>
+                <td><span id="out5"></span></td>
+            </tr>
+            <tr>
+                <td>Uppercase of the Text : </td>
+                <td><span id="out6"></span></td>
+            </tr>
+            <tr>
+                <td>Lowercase of the Text : </td>
+                <td><span id="out7"></span></td>
+            </tr>
+            <tr>
+                <td>Concatenated Text : </td>
+                <td><span id="out8"></span></td>
+            </tr>
+            <tr>
+                <td>Padding at begining of Text : </td>
+                <td><span id="out9"></span></td>
+            </tr>
+            <tr>
+                <td>Padding at end of Text: </td>
+                <td><span id="out10"></span></td>
+        </table>
+        </div>
+        <br><br>
+        <div>
+            <h2>Math Functions</h2>
+            <table>
+                <tr>
+                    <th>Enter a Number</th>
+                    <td><input type="number" name="mi1" id="mi1"></td>
+                </tr>
+                <tr>
+                    <th>Enter a Decimal number</th>
+                    <td><input type="number" name="mi2" id="mi2"></td>
+                </tr>
+                <tr>
+                    <th> Enter Power term</th>
+                    <td><input type="number" name="mi3" id="mi3"></td>
+                </tr>
+                <tr>
+                    <th>Enter an Integer</th>
+                    <td><input type="number" name="mi4" id="mi4"></td>
+                </tr>
+                <tr>
+                    <td><center><button type="submit" name="submit" id="maths" onclick="maths()"style="background-color: darkgreen;">Submit</button></center></td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <div>
+            <table>
+                <tr>
+                    <td>Round of the number using Math.round :</td>
+                    <td><span id="out11"></span></td>
+                </tr>
+                <tr>
+                    <td>Power of a Number :</td>
+                    <td><span id="out12"></span></td>
+                </tr>
+                <tr>
+                    <td>Round of the number using Math.floor :</td>
+                    <td><span id="out13"></span></td>
+                </tr>
+                <tr>
+                    <td>Round of the number using Math.ceil :</td>
+                    <td><span id="out14"></span></td>
+                </tr>
+                <tr>
+                    <td>Integer part of the number :</td>
+                    <td><span id="out15"></span></td>
+                </tr>
+                <tr>
+                    <td>Sign of the number  :</td>
+                    <td><span id="out16"></span></td>
+                </tr>
+                <tr>
+                    <td>Absolute value of the number :</td>
+                    <td><span id="out17"></span></td>
+                </tr>
+                <tr>
+                    <td>Cosine value of the Number :</td>
+                    <td><span id="out18"></span></td>
+                </tr>
+                <tr>
+                    <td>Cosine value of the Number in radian :</td>
+                    <td><span id="out19"></span></td>
+                </tr>
+                <tr>
+                    <td>sine value of the Number :</td>
+                    <td><span id="out20"></span></td>
+                </tr>
+                <tr>
+                    <td>Sine value of the Number in radian :</td>
+                    <td><span id="out21"></span></td>
+                </tr>
+                <tr>
+                    <td>Area of the circle :</td>
+                    <td><span id="out22"></span></td>
+                </tr>
+                <tr>
+                    <td>Square root of the Number :</td>
+                    <td><span id="out23"></span></td>
+                </tr>
+            </table>
+        </div>
+        <script>
+        function string_func(){
+        var in1=document.getElementById("in1").value; 
+        var in2=document.getElementById("in2").value;
+        var in3=document.getElementById("in3").value;
+        var in4=document.getElementById("in4").value;
+        var in5=document.getElementById("in5").value;
+        var in6=document.getElementById("in6").value;
+        var in7=document.getElementById("in7").value;
+        var in8=document.getElementById("in8").value;
+        var in9=document.getElementById("in9").value;
+        out1=in1.length;
+        document.getElementById("out1").innerHTML=out1; 
+        out2=in1.indexOf(in2);
+        document.getElementById("out2").innerHTML=out2;
+        out3=in1.slice(in3,in4);
+        document.getElementById("out3").innerHTML=out3;
+        out4=in1.substr(in3,in4);
+        document.getElementById("out4").innerHTML=out4;
+        out5=in1.replace(in5,in6);
+        document.getElementById("out5").innerHTML=out5;
+        document.getElementById("out6").innerHTML=in1.toUpperCase();
+        document.getElementById("out7").innerHTML=in7.toLowerCase();
+        document.getElementById("out8").innerHTML=in1.concat(" ",in8);
+        out7=in1.padStart(20,in9);
+        document.getElementById("out9").innerHTML=out7;
+        out8=in1.padEnd(20,in9);
+        document.getElementById("out10").innerHTML=out8;
+    }
+    function maths(){
+       var mi1=document.getElementById("mi1").value;
+       var mi2=document.getElementById("mi2").value;
+       var mi3=document.getElementById("mi3").value;
+       var mi4=document.getElementById("mi4").value;
+       document.getElementById("out11").innerHTML=Math.round(mi2);
+       document.getElementById("out12").innerHTML=Math.pow(mi1,mi3);
+       document.getElementById("out13").innerHTML=Math.floor(mi2);
+       document.getElementById("out14").innerHTML=Math.ceil(mi2);
+       document.getElementById("out15").innerHTML=Math.trunc(mi2);
+       document.getElementById("out16").innerHTML=Math.sign(mi4);
+       document.getElementById("out17").innerHTML=Math.abs(mi4);
+       document.getElementById("out18").innerHTML=Math.cos(mi1);
+       document.getElementById("out19").innerHTML=Math.cos(mi1*Math.PI/180);
+       document.getElementById("out20").innerHTML=Math.sin(mi1);
+       document.getElementById("out21").innerHTML=Math.sin(mi1*Math.PI/180);
+       document.getElementById("out22").innerHTML=+Math.PI*mi1*mi1;
+       document.getElementById("out23").innerHTML=+Math.sqrt(mi1);
+    }
+        </script>
+    </body>
+</html>
